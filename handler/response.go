@@ -20,3 +20,13 @@ func sendSuccess(ctx *gin.Context, op string, data any) {
 		"data": data,
 	})
 }
+
+type ErrorResponse struct {
+	Message string `json:"message"`
+	ErrorCode string `json:"errorCode"`
+}
+
+type CreateOpeningResponse struct {
+	Message string `json:"message"`
+	data any `json:"data"`
+}

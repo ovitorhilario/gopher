@@ -15,7 +15,7 @@ type Opening struct {
 	Link string
 	Salary int64	
 }
-
+	
 type OpeningResponse struct {
 	ID        uint      `json:"id"`
 	CreatedAt time.Time `json:"createdAt"`
